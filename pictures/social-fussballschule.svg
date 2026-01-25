@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="What do you see">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b2c3f" />
+      <stop offset="100%" stop-color="#1c5d7a" />
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="16" fill="url(#bg)" />
+  <circle cx="90" cy="64" r="22" fill="#ffffff" />
+  <text x="90" y="126" text-anchor="middle" font-family="'Trebuchet MS', Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="700">What do you see?</text>
+</svg>
