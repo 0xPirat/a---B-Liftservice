@@ -1,0 +1,5 @@
+{
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggestSelection": "first",
+    "editor.acceptSuggestionOnEnter": "on"
+}
