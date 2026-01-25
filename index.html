@@ -17,6 +17,11 @@
 
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <div class="scroll-elevator" aria-hidden="true">
+    <div class="elevator-frame">
+      <img class="elevator-frame-img" src="aufzugbilder%20/frame_000_delay-0.042s.jpg" alt="" />
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -31,7 +36,7 @@
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menü</button>
         <div id="nav-links" class="nav-links">
           <a href="#start">Start</a>
-          <a href="#über">Über uns</a>
+          <a href="#ueber">Über uns</a>
           <a href="#leistungen">Leistungen</a>
           <a href="#referenzen">Referenzen</a>
           <a href="#partner">Partner</a>
@@ -194,10 +199,10 @@
           <h2>Auswahl unserer Kunden</h2>
         </div>
         <div class="reference-grid" data-reveal>
-          <span>ECE</span>
-          <span>Schlosshotel Gehrden</span>
-          <span>Bäckerei Egge</span>
-          <span>OBI</span>
+          <span>Wohnanlagen</span>
+          <span>Hausverwaltungen</span>
+          <span>Gewerbeobjekte</span>
+          <span>Öffentliche Einrichtungen</span>
         </div>
       </div>
     </section>
@@ -245,8 +250,20 @@
           </p>
         </div>
         <div class="social-grid" data-reveal>
-          <img src="pictures/social-foerderkader.png" alt="Förderkader LdBH" />
-          <img src="pictures/social-ssv50.png" alt="SSV Südwinsen 50" />
+          <article class="social-card">
+            <img src="pictures/social-foerderkader.png" alt="Förderkader LdBH" />
+            <div class="social-info">
+              <h3>Förderkader LdBH</h3>
+              <a class="social-link" href="#">Instagram ansehen</a>
+            </div>
+          </article>
+          <article class="social-card">
+            <img src="pictures/social-ssv50.png" alt="SSV Südwinsen 50" />
+            <div class="social-info">
+              <h3>SSV Südwinsen 50</h3>
+              <a class="social-link" href="#">Instagram ansehen</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -269,7 +286,7 @@
             </div>
             <div>
               <h4>E-Mail</h4>
-              <p><a href="mailto:info@ab-liftservice-gmbh.de">info@ab-liftservice-gmbh.de</a></p>
+              <p><a href="mailto:info@liftservice-ab.de">info@liftservice-ab.de</a></p>
             </div>
             <div>
               <h4>Öffnungszeiten</h4>
@@ -314,34 +331,14 @@
         <a href="#kontakt">Kontakt</a>
       </div>
       <div class="footer-legal">
-        <a class="btn ghost" href="#impressum">Impressum</a>
-        <a class="btn ghost" href="#datenschutz">Datenschutz</a>
+        <a class="btn ghost" href="impressum.html">Impressum</a>
+        <a class="btn ghost" href="datenschutz.html">Datenschutz</a>
       </div>
     </div>
+    <div class="container footer-meta">
+      © 2026 A&amp;B Liftservice GmbH. All rights reserved.
+    </div>
   </footer>
-
-  <section id="impressum" class="legal-section">
-    <div class="container">
-      <h2>Impressum</h2>
-      <p>
-        AB Liftservice GmbH<br />
-        Carl-Hopp-Straße 19A<br />
-        18069 Rostock
-      </p>
-      <p>Telefon: +49 381 6661620<br />E-Mail: info@ab-liftservice-gmbh.de</p>
-    </div>
-  </section>
-
-  <section id="datenschutz" class="legal-section">
-    <div class="container">
-      <h2>Datenschutz</h2>
-      <p>
-        Wir behandeln Ihre Daten vertraulich und verwenden sie ausschließlich zur
-        Bearbeitung Ihrer Anfrage. Details ergänzen wir gern in einem vollständigen
-        Datenschutzhinweis.
-      </p>
-    </div>
-  </section>
 
   <script src="script.js"></script>
 </body>

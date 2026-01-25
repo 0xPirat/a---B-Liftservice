@@ -2,10 +2,9 @@
 
 ## Offen
 
-
 - [ ] Grundfarben ändern
-- [ ] Animation hinzufügen
-- 
+- [ ] Soziales ändern (Beispiel Instagram hinzufügen; ein oder zwei Bilder hinzufügen)
+
 
  
  
