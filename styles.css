@@ -953,6 +953,11 @@ ul {
   flex-wrap: wrap;
 }
 
+.footer-legal {
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
 .footer-links a {
   color: #fff;
 }
@@ -1028,5 +1033,10 @@ ul {
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
