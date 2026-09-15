@@ -1,0 +1,4 @@
+.vercel
+.env*
+*.rtf
+.DS_Store

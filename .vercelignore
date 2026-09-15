@@ -1,0 +1,7 @@
+.git
+.vscode
+.DS_Store
+*.rtf
+*.md
+pictures/hero-old.jpeg
+pictures/hero-background.gif

@@ -1,0 +1,5 @@
+# TODO: DOMAIN-PLATZHALTER.DE durch die finale Domain ersetzen.
+User-agent: *
+Allow: /
+
+Sitemap: https://DOMAIN-PLATZHALTER.DE/sitemap.xml
