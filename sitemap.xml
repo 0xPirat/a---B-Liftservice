@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- TODO: DOMAIN-PLATZHALTER.DE durch die finale Domain ersetzen. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://DOMAIN-PLATZHALTER.DE/</loc>
+    <loc>https://liftservice-ab.de/</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://DOMAIN-PLATZHALTER.DE/impressum.html</loc>
+    <loc>https://liftservice-ab.de/impressum.html</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://DOMAIN-PLATZHALTER.DE/datenschutz.html</loc>
+    <loc>https://liftservice-ab.de/datenschutz.html</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://DOMAIN-PLATZHALTER.DE/seit-2003.html</loc>
+    <loc>https://liftservice-ab.de/seit-2003.html</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -131,7 +131,8 @@ if (scrollElevator) {
 }
 
 const elevatorFrameImg = document.querySelector('.elevator-frame-img');
-if (elevatorFrameImg) {
+if (elevatorFrameImg && window.matchMedia('(min-width: 721px)').matches) {
+  elevatorFrameImg.src = elevatorFrameImg.dataset.src;
   const framePaths = [
     "aufzugbilder%20/frame_000_delay-0.042s.jpg",
     "aufzugbilder%20/frame_001_delay-0.041s.jpg",
@@ -327,7 +328,7 @@ if (elevatorFrameImg) {
     "aufzugbilder%20/frame_191_delay-0.042s.jpg"
   ];
 
-  let lastIndex = -1;
+  let lastIndex = 0;
   const setFrameForScroll = () => {
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     const progress = docHeight > 0 ? window.scrollY / docHeight : 0;
@@ -336,20 +337,6 @@ if (elevatorFrameImg) {
     lastIndex = index;
     elevatorFrameImg.src = framePaths[index];
   };
-
-  let preloadIndex = 0;
-  const preloadBatch = () => {
-    const batchSize = 8;
-    for (let i = 0; i < batchSize && preloadIndex < framePaths.length; i += 1) {
-      const img = new Image();
-      img.src = framePaths[preloadIndex];
-      preloadIndex += 1;
-    }
-    if (preloadIndex < framePaths.length) {
-      window.setTimeout(preloadBatch, 120);
-    }
-  };
-  preloadBatch();
 
   let scrollTicking = false;
   const requestFrameUpdate = () => {

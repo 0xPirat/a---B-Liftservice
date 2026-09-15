@@ -8,7 +8,15 @@
   <meta name="description"
     content="AB Liftservice GmbH: Aufzugservice seit 2003. Notdienst 24/7, Wartungen, Prüfungen, Modernisierungen und Reparaturen." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
-  <link rel="canonical" href="/" />
+  <link rel="canonical" href="https://liftservice-ab.de/" />
+  <link rel="icon" href="favicon.png" type="image/png" sizes="48x48" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:title" content="AB Liftservice GmbH – Aufzüge, Service & Modernisierung" />
+  <meta property="og:description"
+    content="Aufzugservice seit 2003: 24/7-Notdienst, Wartung, Prüfung, Reparatur und Modernisierung in Rostock und Region." />
+  <meta property="og:url" content="https://liftservice-ab.de/" />
+  <meta property="og:image" content="https://liftservice-ab.de/pictures/hero-background.jpg" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -41,26 +49,25 @@
       "areaServed": "Rostock und Region"
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/pictures/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/pictures/favicon-512x512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/pictures/apple-touch-icon.png" />
 </head>
 
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
   <div class="scroll-elevator" aria-hidden="true">
     <div class="elevator-frame">
-      <img class="elevator-frame-img" src="aufzugbilder%20/frame_000_delay-0.042s.jpg" alt="" />
+      <img class="elevator-frame-img" data-src="pictures/optimized/elevator-frame.avif" width="250" height="450"
+        decoding="async" alt="" />
     </div>
   </div>
 
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <img src="pictures/logo-ab-liftservice.jpg" alt="AB Liftservice GmbH Logo" />
+        <img src="pictures/optimized/logo-128.avif" width="128" height="128" alt="A&amp;B Liftservice GmbH Logo" />
         <div>
           <p class="brand-title">A&B Liftservice GmbH</p>
           <p class="brand-sub">Aufzüge | Service | Modernisierung</p>
@@ -105,7 +112,13 @@
           </div>
         </div>
         <div class="hero-visual" data-reveal>
-          <img src="pictures/hero-background.jpg" alt="Hintergrundmotiv" />
+          <picture>
+            <source type="image/avif"
+              srcset="pictures/optimized/hero-480.avif 480w, pictures/optimized/hero-960.avif 960w"
+              sizes="(max-width: 640px) 92vw, 46vw" />
+            <img src="pictures/hero-background.jpg" width="1920" height="1080" fetchpriority="high" decoding="async"
+              alt="Moderner Aufzug von A&amp;B Liftservice" />
+          </picture>
           <div class="hero-stat">
             <p>20+ Jahre</p>
             <span>Branchenerfahrung</span>
@@ -113,6 +126,7 @@
         </div>
       </div>
       <div class="container hero-cards" data-reveal>
+        <h2 class="sr-only">Ihre Vorteile mit A&amp;B Liftservice</h2>
         <article class="info-card">
           <h3>Notdienst rund um die Uhr</h3>
           <p>Wir bleiben erreichbar, wenn es wichtig wird – auch außerhalb der Geschäftszeiten.</p>
@@ -160,23 +174,35 @@
 
         <div id="team" class="team-grid" data-reveal>
           <article class="team-card">
-            <img src="pictures/team-peter.jpg" alt="Peter Andrews" />
+            <picture>
+              <source type="image/avif" srcset="pictures/optimized/team-peter-480.avif" />
+              <img src="pictures/team-peter.jpg" width="480" height="720" loading="lazy" decoding="async"
+                alt="Peter Andrews, Geschäftsführer" />
+            </picture>
             <div>
-              <h4>Peter Andrews</h4>
+              <h3>Peter Andrews</h3>
               <p>Geschäftsführer</p>
             </div>
           </article>
           <article class="team-card">
-            <img src="pictures/team-nicole.jpg" alt="Nicole Benedict" />
+            <picture>
+              <source type="image/avif" srcset="pictures/optimized/team-nicole-480.avif" />
+              <img src="pictures/team-nicole.jpg" width="480" height="720" loading="lazy" decoding="async"
+                alt="Nicole Benedict, Prokuristin und Projektmanagerin" />
+            </picture>
             <div>
-              <h4>Nicole Benedict</h4>
+              <h3>Nicole Benedict</h3>
               <p>Prokuristin/ Projektmanagerin</p>
             </div>
           </article>
           <article class="team-card">
-            <img src="pictures/team-martina.jpg" alt="Martina Öri" />
+            <picture>
+              <source type="image/avif" srcset="pictures/optimized/team-martina-480.avif" />
+              <img src="pictures/team-martina.jpg" width="480" height="720" loading="lazy" decoding="async"
+                alt="Martina Öri, Bilanzbuchhalterin" />
+            </picture>
             <div>
-              <h4>Martina Öri</h4>
+              <h3>Martina Öri</h3>
               <p>Bilanzbuchhalterin</p>
             </div>
           </article>
@@ -250,24 +276,24 @@
         <div class="partner-marquee" data-reveal aria-label="Partner Logos">
           <div class="partner-track">
             <div class="partner-set">
-              <img src="pictures/partners/partner-1.png" alt="Partner Logo 1" />
-              <img src="pictures/partners/partner-2.jpeg" alt="Partner Logo 2" />
-              <img src="pictures/partners/partner-3.png" alt="Partner Logo 3" />
-              <img src="pictures/partners/partner-4.png" alt="Partner Logo 4" />
-              <img src="pictures/partners/partner-5.png" alt="Partner Logo 5" />
-              <img src="pictures/partners/partner-6.png" alt="Partner Logo 6" />
-              <img src="pictures/partners/partner-7.png" alt="Partner Logo 7" />
-              <img src="pictures/partners/partner-8.png" alt="Partner Logo 8" />
+              <img src="pictures/partners/partner-1.png" width="200" height="200" loading="lazy" decoding="async" alt="Partner Logo 1" />
+              <img src="pictures/partners/partner-2.jpeg" width="252" height="94" loading="lazy" decoding="async" alt="Partner Logo 2" />
+              <img src="pictures/partners/partner-3.png" width="267" height="200" loading="lazy" decoding="async" alt="Partner Logo 3" />
+              <img src="pictures/partners/partner-4.png" width="365" height="199" loading="lazy" decoding="async" alt="Partner Logo 4" />
+              <img src="pictures/partners/partner-5.png" width="460" height="43" loading="lazy" decoding="async" alt="Partner Logo 5" />
+              <img src="pictures/partners/partner-6.png" width="461" height="179" loading="lazy" decoding="async" alt="Partner Logo 6" />
+              <img src="pictures/partners/partner-7.png" width="461" height="137" loading="lazy" decoding="async" alt="Partner Logo 7" />
+              <img src="pictures/partners/partner-8.png" width="461" height="127" loading="lazy" decoding="async" alt="Partner Logo 8" />
             </div>
             <div class="partner-set" aria-hidden="true">
-              <img src="pictures/partners/partner-1.png" alt="" />
-              <img src="pictures/partners/partner-2.jpeg" alt="" />
-              <img src="pictures/partners/partner-3.png" alt="" />
-              <img src="pictures/partners/partner-4.png" alt="" />
-              <img src="pictures/partners/partner-5.png" alt="" />
-              <img src="pictures/partners/partner-6.png" alt="" />
-              <img src="pictures/partners/partner-7.png" alt="" />
-              <img src="pictures/partners/partner-8.png" alt="" />
+              <img src="pictures/partners/partner-1.png" width="200" height="200" loading="lazy" decoding="async" alt="" />
+              <img src="pictures/partners/partner-2.jpeg" width="252" height="94" loading="lazy" decoding="async" alt="" />
+              <img src="pictures/partners/partner-3.png" width="267" height="200" loading="lazy" decoding="async" alt="" />
+              <img src="pictures/partners/partner-4.png" width="365" height="199" loading="lazy" decoding="async" alt="" />
+              <img src="pictures/partners/partner-5.png" width="460" height="43" loading="lazy" decoding="async" alt="" />
+              <img src="pictures/partners/partner-6.png" width="461" height="179" loading="lazy" decoding="async" alt="" />
+              <img src="pictures/partners/partner-7.png" width="461" height="137" loading="lazy" decoding="async" alt="" />
+              <img src="pictures/partners/partner-8.png" width="461" height="127" loading="lazy" decoding="async" alt="" />
             </div>
           </div>
         </div>
@@ -285,7 +311,8 @@
         </div>
         <div class="social-grid" data-reveal>
           <article class="social-card">
-            <img src="pictures/social-foerderkader.png" alt="Förderkader Reni Schneider" />
+            <img src="pictures/social-foerderkader.png" width="100" height="100" loading="lazy" decoding="async"
+              alt="Förderkader René Schneider" />
             <div class="social-info">
               <h3>Förderkader René Schneider</h3>
               <a class="social-link" href="https://www.instagram.com/fc_foerderkader/" target="_blank"
@@ -293,7 +320,8 @@
             </div>
           </article>
           <article class="social-card">
-            <img src="pictures/social-ssv50.png" alt="Sievershagen Sportverein 1950" />
+            <img src="pictures/social-ssv50.png" width="92" height="92" loading="lazy" decoding="async"
+              alt="Sievershäger Sportverein 1950" />
             <div class="social-info">
               <h3>Sievershäger SV 1950</h3>
               <a class="social-link" href="https://www.instagram.com/sievershaegersv1950/" target="_blank"
@@ -301,7 +329,8 @@
             </div>
           </article>
           <article class="social-card">
-            <img src="pictures/social-fussballschule.svg" alt="Fußballschule René Schneider" />
+            <img src="pictures/social-fussballschule.svg" width="100" height="100" loading="lazy" decoding="async"
+              alt="Fußballschule René Schneider" />
             <div class="social-info">
               <h3>Fußballschule René Schneider</h3>
               <a class="social-link" href="https://www.instagram.com/fussballschule_rene_schneider/" target="_blank"
@@ -321,19 +350,19 @@
 
           <div class="contact-cards">
             <div>
-              <h4>Adresse</h4>
+              <h3>Adresse</h3>
               <p>Carl-Hopp-Straße 19A<br />18069 Rostock</p>
             </div>
             <div>
-              <h4>Telefon</h4>
+              <h3>Telefon</h3>
               <p><a href="tel:+493816661620">+49 381 6661620</a></p>
             </div>
             <div>
-              <h4>E-Mail</h4>
+              <h3>E-Mail</h3>
               <p><a href="mailto:info@liftservice-ab.de">info@liftservice-ab.de</a></p>
             </div>
             <div>
-              <h4>Öffnungszeiten</h4>
+              <h3>Öffnungszeiten</h3>
               <p>Mo-Fr: 08:00-17:00</p>
             </div>
           </div>
@@ -389,7 +418,7 @@
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
