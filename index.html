@@ -49,10 +49,11 @@
       "areaServed": "Rostock und Region"
     }
   </script>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/pictures/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="/pictures/favicon-512x512.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/pictures/apple-touch-icon.png" />
+  <link rel="preload" href="styles.min.css" as="style" />
+  <link rel="stylesheet" href="styles.min.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="pictures/favicon-512x512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="pictures/apple-touch-icon.png" />
 </head>
 
 <body>
@@ -114,7 +115,7 @@
         <div class="hero-visual" data-reveal>
           <picture>
             <source type="image/avif"
-              srcset="pictures/optimized/hero-480.avif 480w, pictures/optimized/hero-960.avif 960w"
+              srcset="pictures/optimized/hero-480.avif 480w, pictures/optimized/hero-720.avif 720w, pictures/optimized/hero-960.avif 960w"
               sizes="(max-width: 640px) 92vw, 46vw" />
             <img src="pictures/hero-background.jpg" width="1920" height="1080" fetchpriority="high" decoding="async"
               alt="Moderner Aufzug von A&amp;B Liftservice" />
@@ -213,8 +214,9 @@
             <h3>Standort</h3>
             <p>Carl-Hopp-Straße 19A, 18069 Rostock</p>
           </div>
-          <iframe title="Standort AB Liftservice GmbH" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Carl-Hopp-Stra%C3%9Fe%2019A%2018069%20Rostock&output=embed"
+          <iframe class="deferred-embed" title="Standort AB Liftservice GmbH" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            data-src="https://www.google.com/maps?q=Carl-Hopp-Stra%C3%9Fe%2019A%2018069%20Rostock&output=embed"
             allowfullscreen>
           </iframe>
         </div>
@@ -415,9 +417,14 @@
   </footer>
 
   <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    if (!['localhost', '127.0.0.1'].includes(window.location.hostname)) {
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      const insightsScript = document.createElement('script');
+      insightsScript.defer = true;
+      insightsScript.src = '/_vercel/insights/script.js';
+      document.head.append(insightsScript);
+    }
   </script>
-  <script defer src="/_vercel/insights/script.js"></script>
   <script src="script.js" defer></script>
 </body>
 
