@@ -63,6 +63,29 @@ teamCards.forEach((card) => {
   });
 });
 
+const deferredEmbeds = document.querySelectorAll('.deferred-embed[data-src]');
+const loadEmbed = (embed) => {
+  embed.src = embed.dataset.src;
+  embed.removeAttribute('data-src');
+};
+
+if ('IntersectionObserver' in window) {
+  const embedObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          loadEmbed(entry.target);
+          embedObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: '300px 0px' }
+  );
+  deferredEmbeds.forEach((embed) => embedObserver.observe(embed));
+} else {
+  deferredEmbeds.forEach(loadEmbed);
+}
+
 const scrollElevator = document.querySelector('.scroll-elevator');
 if (scrollElevator) {
   let idleTimer;

@@ -8,11 +8,10 @@
   <meta name="description" content="Seit 2003: Geschichte und Leistungen der A&B Liftservice GmbH." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://liftservice-ab.de/seit-2003.html" />
-  <link rel="icon" href="favicon.png" type="image/png" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-round-32x32.png" />
   <link rel="stylesheet" href="styles.min.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="pictures/favicon-512x512.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="pictures/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="pictures/favicon-round-512x512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="pictures/apple-touch-icon-round.png" />
 </head>
 
 <body>
@@ -104,9 +103,14 @@
   </footer>
 
   <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    if (!['localhost', '127.0.0.1'].includes(window.location.hostname)) {
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      const insightsScript = document.createElement('script');
+      insightsScript.defer = true;
+      insightsScript.src = '/_vercel/insights/script.js';
+      document.head.append(insightsScript);
+    }
   </script>
-  <script defer src="/_vercel/insights/script.js"></script>
   <script src="script.js" defer></script>
 </body>
 

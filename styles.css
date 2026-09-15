@@ -1,25 +1,9 @@
-@font-face {
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 400 600;
-  font-display: swap;
-  src: url("assets/fonts/fraunces-latin-variable.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url("assets/fonts/space-grotesk-latin-variable.woff2") format("woff2");
-}
-
 :root {
   --bg: #f6f4f0;
   --bg-strong: #111821;
   --bg-soft: #efe9df;
   --card: #ffffff;
-  --accent: #c44922;
+  --accent: #a63f1c;
   --accent-dark: #a63f1c;
   --ink: #111821;
   --ink-soft: #43505d;
@@ -36,7 +20,7 @@
 
 body {
   margin: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
   background: var(--bg);
   color: var(--ink);
   line-height: 1.6;
@@ -257,7 +241,7 @@ body {
   right: 10px;
   bottom: 22px;
   text-align: center;
-  font-family: "Fraunces", serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 0.7rem;
   letter-spacing: 0.6px;
   color: rgba(10, 16, 22, 0.95);
@@ -307,7 +291,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Fraunces", serif;
+  font-family: Georgia, "Times New Roman", serif;
   letter-spacing: 0.2px;
   margin: 0 0 12px;
 }
